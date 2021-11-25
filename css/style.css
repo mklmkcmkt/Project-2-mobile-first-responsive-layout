@@ -1,5 +1,54 @@
-* body{ 
+* {
+    box-sizing: border-box;
+}
+.nav { 
+    list-style-type: none;
+    text-align:center;
+    
+}
+
+body{ 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* To attend requisites of 320 max width */
+    max-width: 290px; 
+    /*768px - tablet (breakpoint)*/
+    /* max-width: 720px; */
+    /*1200px - desktop (breakpoint)*/
+    /* max-width: 1140px; */
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #4C5054 ;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    text-align: center;
+    color: #585B5A;
+    text-transform: capitalize;
+    font-size: ;
+}
+
+.color-light {
+    color: #8F93A9;
+}
+
+p {
+    color: #333;
 }

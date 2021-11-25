@@ -3,36 +3,112 @@
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width initial-scale=1">
-        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/style.css">
         <title> Responsive Personal Website Portfolio </title> 
 
     </head>
     <body> 
         <header> 
-            <nav>
-                <!-- .main-nav>ul>li*4{Text} -->
-                <div class="main-nav">
-                    <ul class="nav">
-                        <li>Name</li>
-                        <li>Home</li>
-                        <li>Portfolio</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="container">
+                <div class="logo">Leandro Ramos</div>
+                <nav>
+                    <!-- .main-nav>ul>li*3{Text} -->
+                    <div class="main-nav">
+                        <ul class="nav">                        
+                            <li>Home</li>
+                            <li>Portfolio</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                </nav>
 
+                <!-- div.section-profile>p{Text$}+div>img.profile-image -->
+                <div class="section-profile">
+                    <div class="container">
+                        <div><img src="images/responsive-layout-profile.png" alt="profile-image" class="responsive-image" ></div>
+                        <p class="color-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum unde quae libero est ipsam voluptatem dicta quas, ipsum velit aliquid corporis repellendus autem aperiam, facere error optio obcaecati, incidunt deleniti.</p>                
+                    </div>
+                </div>
+            </div>
         </header>
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        <main>       
+            
+            <!-- section#portfolio>h2{Portfolio}+article*6>(.portfolio-img>img[alt="img$"])+h3.h3class{Title$}+p -->
+            <section id="portfolio">
+                <div class="container">
+            
+                    <h2>Portfolio</h2> 
+
+                    <article>
+                        <div class="portfolio-img"><img src="images/portfolio-1.png" alt="Marketing Page" class="responsive-image"></div>
+                        <h3 class="h3class">Marketing Page</h3>
+                        <p>Sed porttitor lectus nibh.
+
+                            Vivamus suscipit tortor eget felis porttitor volutpat.
+                            
+                            Donec sollicitudin molestie malesuada.</p>
+                    </article>
+                    <article>
+                        <div class="portfolio-img"><img src="images/portfolio-2.png" alt="Search Page" class="responsive-image"></div>
+                        <h3 class="h3class">Search Page</h3>
+                        <p>Sed porttitor lectus nibh.
+
+                            Vivamus suscipit tortor eget felis porttitor volutpat.
+                            
+                            Donec sollicitudin molestie malesuada.</p>
+                    </article>
+                    <article>
+                        <div class="portfolio-img"><img src="images/portfolio-3.png" alt="Travel App" class="responsive-image"></div>
+                        <h3 class="h3class">Travel App</h3>
+                        <p>Sed porttitor lectus nibh.
+
+                            Vivamus suscipit tortor eget felis porttitor volutpat.
+                            
+                            Donec sollicitudin molestie malesuada.</p>
+                    </article>
+                    <article>
+                        <div class="portfolio-img"><img src="images/portfolio-4.png" alt="Map of Favofite Spots" class="responsive-image"></div>
+                        <h3 class="h3class">Map of Favofite Spots</h3>
+                        <p>Sed porttitor lectus nibh.
+
+                            Vivamus suscipit tortor eget felis porttitor volutpat.
+                            
+                            Donec sollicitudin molestie malesuada.</p>
+                    </article>
+                    <article>
+                        <div class="portfolio-img"><img src="images/portfolio-5.png" alt="Photo Gallery" class="responsive-image"></div>
+                        <h3 class="h3class">Photo Gallery</h3>
+                        <p>Sed porttitor lectus nibh.
+
+                            Vivamus suscipit tortor eget felis porttitor volutpat.
+                            
+                            Donec sollicitudin molestie malesuada.</p>
+                    </article>
+                    <article>
+                        <div class="portfolio-img"><img src="images/portfolio-6.png" alt="Calculator" class="responsive-image"></div>
+                        <h3 class="h3class">Calculator</h3>
+                        <p>Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                    </article>
+            </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <h2> Contact </h2>
+                <p class="color-light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptates autem dolor, nisi dicta ducimus ut, ratione similique recusandae eligendi veniam voluptatem ipsa in quos. Distinctio maiores cupiditate facilis aperiam!</p>
+                <!-- a:tel -->            
+                <span class="contact">Phone:</span> <br><a href="tel:+"> +1 983-9949</a><br>
+                <!-- a:mail -->
+                <span class="contact">Email:</span><a href="mailto:"> lee@teamtreehouse.com </a>
+                <hr>
+                <!-- #copy-right>div.logo{Leandro Ramos}+a[href="#header"]{Back to Top} -->
+                <div id="copy-right">
+                    <div class="logo">Leandro Ramos</div>
+                    <a href="#header">Back to Top</a>
+            </div>
+        </div>
+
+        </footer>   
     
     
     
