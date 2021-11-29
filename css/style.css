@@ -29,6 +29,26 @@ body{
     height: auto;
 }
 
+.logo {
+    text-align: center;
+}
+
+#header{
+    background-color: #FAFAFA;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+#portfolio {
+    padding-bottom: 30px;
+}
+
+#footer {
+    background-color:#FAFAFA;
+    padding-top: 20px;
+
+}
+
 h2 {
     text-align: center;
     color: #4C5054 ;
@@ -52,3 +72,5 @@ h3 {
 p {
     color: #333;
 }
+
+

@@ -1,0 +1,114 @@
+/* Complete the challenge by writing CSS below */
+a:link {
+    color: orange;
+    }
+    a:visited {
+      color: steelblue;
+    }
+    a:hover{
+        color:orange ;
+    }
+    /*  Types of Selectors  */
+
+    /*Type Selectors*/
+  
+}
+
+header{
+  background-color: orange;
+}
+
+/*Descendent Selection*/
+header p {
+  background-color: snow;
+  border-bottom: 1px solid gray;
+ 
+}
+footer{ 
+  background-color: lightcoral;
+}
+
+a:link { 
+  color: darkblue;
+  background-color: peachpuff;
+  text-decoration: none;
+}
+a:visited{
+  color: seagreen;
+}
+a:hover {
+  text-decoration: underline;
+}
+img:hover {
+  border: 5px solid bleu;
+  border-radius: 8px;
+}  
+
+/* This pseudo class called focus is used when a keyboard user tabs to one of the app link using to 
+keyboard to make it obvious where the tab is  */
+a:focus {
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+}
+
+
+ol li {
+  list-style: none;
+}
+
+p{
+  color: olive;
+  font-size: 10;
+}
+  
+/*Descendent Selection is part of Type Selection*/
+ol li {
+  letter-spacing: 3px;
+  color: tomato;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Id Selectors*/
+
+#education {
+  border: 3px solid orange;
+}
+
+/*Descendent Selection*/
+#education h3 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+}
+
+#skills-list {
+  background-color: aliceblue;
+  padding: 8px;
+}
+
+/*Class Selectors*/
+.top-skills {
+ background-color: teal;
+ font-weight:bold;
+  color: papayawhip;
+}
+.date{
+  border: 2px solid steelblue;
+  border-radius: 12px;
+  padding: 6px;
+}
+.special { 
+  text-transform: uppercase;
+  background-color: papayawhip;
+}
+#proud {
+  
+  font-size: 38px;
+}
+
+  
+
+
