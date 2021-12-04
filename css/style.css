@@ -7,21 +7,59 @@
     
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    text-transform: uppercase;
+
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-item {
+    margin:8px 0 ;
+    padding: 16px 8px;
+    background-color: #fff;
+}
+
+.image-wraper {
+    padding: 24px;
+}
 body{ 
     margin: 0;
     padding: 0;
 }
+/* This container will attend    */
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
     /* To attend requisites of 320 max width */
     max-width: 290px; 
     /*768px - tablet (breakpoint)*/
     /* max-width: 720px; */
     /*1200px - desktop (breakpoint)*/
     /* max-width: 1140px; */
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 100%;
 }
 
 .responsive-image {
@@ -62,7 +100,6 @@ h3 {
     text-align: center;
     color: #585B5A;
     text-transform: capitalize;
-    font-size: ;
 }
 
 .color-light {
@@ -72,5 +109,32 @@ h3 {
 p {
     color: #333;
 }
+
+
+
+/*tablet*/
+@media(min-width: 768px) {
+    /* From  768px*/
+    .container{
+      max-width: 720px;
+    }
+    .flex-item{
+        width: 50%;
+      }
+ }
+  
+  /*desktop*/
+@media(min-width: 1200px){
+     /* From  1200px*/
+    .container{
+      max-width: 1140px;
+    }
+  
+    .flex-item{
+      width: 33.33%;
+    }
+  }
+
+
 
 

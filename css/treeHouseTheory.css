@@ -12,7 +12,7 @@ a:link {
 
     /*Type Selectors*/
   
-}
+
 
 header{
   background-color: orange;
@@ -44,8 +44,7 @@ img:hover {
   border-radius: 8px;
 }  
 
-/* This pseudo class called focus is used when a keyboard user tabs to one of the app link using to 
-keyboard to make it obvious where the tab is  */
+/* This pseudo class called focus is used when the user tabs to it using a keyboard and stop on the page link so, it make the link obvious where the tab is  */
 a:focus {
   color: white;
   background-color: orange;
@@ -109,6 +108,21 @@ ul li {
   font-size: 38px;
 }
 
-  
+/* The em-based font-size value for *.heading* is relative to its parent header's *font-size* value. This causes a compounding issue that makes the font-size value larger than the desired value. */
+
+Replace the em units of .heading with a unit that is relative to the root element of the page.
+/* Complete the challenge by writing CSS below */
+
+html {
+  font-size: 16px;
+}
+
+header {
+  font-size: 1.5em;
+}
+
+.heading {
+  font-size: 5em;
+}
 
 
