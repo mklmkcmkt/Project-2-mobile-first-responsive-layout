@@ -1,24 +1,17 @@
-/* Complete the challenge by writing CSS below */
-a:link {
-    color: orange;
-    }
-    a:visited {
-      color: steelblue;
-    }
-    a:hover{
-        color:orange ;
-    }
-    /*  Types of Selectors  */
 
-    /*Type Selectors*/
-  
-}
+    /* Declaration order */
+/* Box size( width ), padding, boarder, margin, color, font-size, text... 
+padding/margin: 1st = Top, Right, Bottom, Left
+padding/margin: 1st 2nd = (Top + Bottom), (Right + Left)
+ padding/margin: 1st 2nd 3th = Top, (Right + Left), Bottom
+  padding/margin: 1st 2nd 3th 4th = Top, Right, Left, Bottom*/
 
+    /*  Types Selectors  */
 header{
   background-color: orange;
 }
 
-/*Descendent Selection*/
+/*Descendent Selection (Descendent Selection is part of Type Selection)*/
 header p {
   background-color: snow;
   border-bottom: 1px solid gray;
@@ -62,7 +55,6 @@ p{
   font-size: 10;
 }
   
-/*Descendent Selection is part of Type Selection*/
 ol li {
   letter-spacing: 3px;
   color: tomato;
@@ -78,7 +70,6 @@ ul li {
   border: 3px solid orange;
 }
 
-/*Descendent Selection*/
 #education h3 {
   font-family: Arial, sans-serif;
   font-size: 32px;
@@ -109,6 +100,12 @@ ul li {
   font-size: 38px;
 }
 
+/* Declaration order */
+/* Box size( width ), padding, boarder, margin, color, font-size, text... 
+padding/margin: 1st = Top, Right, Bottom, Left
+padding/margin: 1st 2nd = (Top + Bottom), (Right + Left)
+ padding/margin: 1st 2nd 3th = Top, (Right + Left), Bottom
+  padding/margin: 1st 2nd 3th 4th = Top, Right, Left, Bottom*/
   
 
 

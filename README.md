@@ -1,2 +1,2 @@
 # responsive-layout-website
- This is my Techdegree's first responsive layout website  - Project 2
+ This is my Web Development Techdegree's first responsive layout website  - Project 2
