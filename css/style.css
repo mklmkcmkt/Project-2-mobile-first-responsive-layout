@@ -1,21 +1,56 @@
 * {
     box-sizing: border-box;
 }
+
+body{ 
+    margin: 0;
+    padding: 0;
+}
+
 .nav { 
     list-style-type: none;
     text-align:center;
     
 }
 
-body { 
+ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
+.logo {
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-item {
+    margin: 5px 0;
+    padding: 10px 12px;
+    background-color: #fff;
+}
+
+.image-wraper {
+    padding: 24px;
+}
+
+/* This container will attend    */
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
     /* To attend requisites of 320 max width */
     max-width: 290px; 
     /*768px - tablet (breakpoint)*/
@@ -24,13 +59,18 @@ body {
     /* max-width: 1140px; */
 }
 
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 100%;
+}
+
 .responsive-image {
     width: 100%;
     height: auto;
-}
-
-.logo {
-    text-align: center;
 }
 
 #header {
@@ -62,7 +102,6 @@ h3 {
     text-align: center;
     color: #585B5A;
     text-transform: capitalize;
-    font-size: ;
 }
 
 .color-light {
@@ -72,5 +111,36 @@ h3 {
 p {
     color: #333;
 }
+#copy-right a {
+    text-align: right;
+    margin-right: 0%;
+}
+
+
+
+/*tablet*/
+@media screen and (min-width: 768px),(orientation: landscape ) {
+    /* From  768px*/
+    .container{
+      max-width: 720px;
+    }
+    .flex-item{
+        width: 50%;
+      }
+ }
+  
+  /*desktop*/
+@media(min-width: 1200px){
+     /* From  1200px*/
+    .container{
+      max-width: 1140px;
+    }
+  
+    .flex-item{
+      width: 33.33%;
+    }
+  }
+
+
 
 
