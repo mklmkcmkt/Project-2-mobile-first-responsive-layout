@@ -9,16 +9,14 @@
     </head>
     <body> 
         <header id="header"> 
-            <div class="container">
-                <di class="logo">Leandro Ramos</di v>
-                <nav>
+            <div class="container">               
+                <nav class="nav-header">
+                    <div class="logo-header">Leandro Ramos</div>
                     <!-- .main-nav>ul>li*3{Text} -->
-
-                        <ul class="nav-list">                        
+                        <ul class="nav-list-header">                        
                             <li class="nav-item"><a class="nav-link">Home</a></li>
                             <li class="nav-item"><a class="nav-link">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link">Contact</a></li>
-                            
+                            <li class="nav-item"><a class="nav-link">Contact</a></li>                            
                         </ul>
                 
                 </nav>
@@ -26,8 +24,10 @@
                 <!-- div.section-profile>p{Text$}+div>img.profile-image -->
                 <div id="section-profile">
                     <div class="container">
-                        <div class="image-wraper"><img src="images/responsive-layout-profile.png" alt="profile-image" class="responsive-image" ></div>
-                        <p class="color-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum unde quae libero est ipsam voluptatem dicta quas, ipsum velit aliquid corporis repellendus autem aperiam, facere error optio obcaecati, incidunt deleniti.</p>                
+                        <div class="profile-flex"> <!-- image and text's parent-->
+                            <div class="image-wrapper"><img src="images/responsive-layout-profile.png" alt="profile-image" class="responsive-image" ></div>
+                            <p class="color-light profile-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum unde quae libero est ipsam voluptatem dicta quas, ipsum velit aliquid corporis repellendus autem aperiam, facere error optio obcaecati, incidunt deleniti.</p>                
+                       </div>
                     </div>
                 </div>
             </div>
@@ -96,21 +96,30 @@
             </div>
             </section>
         </main>
-        <footer id="footer">
-            <div class="container footer">
-                <h2> Contact </h2>
-                <p class="color-light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptates autem dolor, nisi dicta ducimus ut, ratione similique recusandae eligendi veniam voluptatem ipsa in quos. Distinctio maiores cupiditate facilis aperiam!</p>
-                <!-- a:tel -->            
-                <span class="contact">Phone:</span> <br><a href="tel:+"> +1 983-9949</a><br>
-                <!-- a:mail -->
-                <span class="contact">Email:</span><a href="mailto:"> lee@teamtreehouse.com </a>
+        <footer id="footer" class="color-light">
+            <div class="container ">
+                <section class="contact-section">
+                    <h2> Contact </h2>                
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptates autem dolor, nisi dicta ducimus ut, ratione similique recusandae eligendi veniam voluptatem ipsa in quos. Distinctio maiores cupiditate facilis aperiam!</p>
+                    <!-- a:tel -->            
+                    <span class="contact">Phone:</span><a href="tel:+"> +1 983-9949</a><br>
+                    <!-- a:mail -->
+                    <span class="contact">Email:</span><a href="mailto:"> hello@hivepixels.com </a>
+                </section>
                 <hr>
+            
                 <!-- #copy-right>div.logo{Leandro Ramos}+a[href="#header"]{Back to Top} -->
-                <div id="copy-right">
-                    <div class="logo">Leandro Ramos</div>
-                    <a href="#header">Back to Top</a>
+                <nav class="nav-footer" >
+                    <div class="logo-footer" >Leandro Ramos </div>
+                    <a href="#header" class="back-to-top">Back to Top</a>
+                    <ul class="nav-list-footer">                        
+                        <li class="nav-item"><a class="nav-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link">Contact</a></li>
+                        
+                    </ul>
+                </nav>
             </div>
-        </div>
 
         </footer>   
     
