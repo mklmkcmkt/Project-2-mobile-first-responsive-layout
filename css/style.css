@@ -1,3 +1,4 @@
+/* Mobile */
 * {
     box-sizing: border-box;
 }
@@ -5,7 +6,7 @@
 body{ 
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 21px;
 }
 
 a {
@@ -28,23 +29,23 @@ ul {
     text-transform: capitalize;
     padding: 35px 0 10px 0 ;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #4A4A4A;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
     font-weight: 900;
 
 }
 
 .logo-footer{
-    font-size: 16px;
+    font-size: 21px;
     padding: 0;
 }
 
 .contact-section {    
     text-align: center;
-    padding: 40px 0;
+    padding: 10px 0;
     color: #8F93A9;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
     
     
 }
@@ -76,21 +77,19 @@ ul {
 }
 
 .image-wrapper {
-    padding: 24px;
+    padding: 2px;
+    margin: 40px;
 }
 
 
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 0;
+    padding-right: 0;
     /* To attend requisites of 320 max width */
-    max-width: 290px; 
-    /*768px - tablet (breakpoint)*/
-    /* max-width: 720px; */
-    /*1200px - desktop (breakpoint)*/
-    /* max-width: 1140px; */
+    max-width: 100%; 
+    
 }
 
 .flex-container{
@@ -109,13 +108,17 @@ ul {
 
 .back-to-top {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 21px;
+    text-transform: capitalize;    
+    text-align: center;    
+    color: #4A4A4A;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 900;
 }
 
 .flex-item {
     width: 100%;
-    padding-right: 12px;
-    padding-left: 12px;
+    
 }
 
 .responsive-image {
@@ -125,11 +128,11 @@ ul {
 
 #header {
     background-color: #FAFAFA;
-    padding-bottom: 55px;
+    padding-bottom: 35px;
 }
 
 #portfolio {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 #footer {
@@ -142,7 +145,7 @@ h2 {
     text-align: center;
     color: #4C5054 ;
     text-transform: uppercase;
-    font-size: 15px;    
+    font-size: 21px;    
     margin: 45px 0 ;
 }
 
@@ -158,73 +161,122 @@ h3 {
 
 p {
     color: #8F93A9;
+    text-align: center;
 }
 #copy-right a {
     text-align: right;
     margin-right: 0;
 }
-/* Break points: 
-$desktops: 1200px = xl
-$laptops: 1024px = lg
-$tablets: 768px = md
-$phones: 480px = sm
+
+ul.nav-list-footer{
+    display: none;
+}
+/* CSS frameworks Break points: 
+320px — 480px: Mobile devices
+481px — 768px: Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
  */
-
-/* Mobile */
-@media screen and (min-width: 320px)
-
-{
- .nav-list-footer{
-     display: none;
- }
-
-} 
-
+ 
+ 
+/*##################################################################################*/
 /*tablet*/
 @media screen and (min-width: 768px) {
     /* From  768px*/
-    .container{
-       max-width: 720px;  
-             
 
+    .container{
+        max-width: 95%; 
+         
     }
-    
-    .flex-item {
-        width: 50%;
-        
-      } 
-           
-      .nav-item{
-        background: transparent;
-          
-      }
-      .nav-list-header {    
+
+    .nav-list-header {    
         flex-direction: row;
-        justify-content: center;  
+        justify-content: center;
+        padding-bottom: 20px;  
         
     }
-        
-     .profile-flex {
-        display: flex; 
-        flex-direction: row;
-        margin-top: 30px;   
+    .profile-flex {
+        display: inline-flex; 
+        flex-direction: row;           
         flex-wrap: nowrap;
-        flex-direction: row;          
-       
-    }
+        flex-direction: row;
+    }  
+
     .image-wrapper {
         order: 1;
-        flex: 1;
+        flex: 1; 
+    }    
     
+    div.image-wrapper{
+        padding-top: 20px;
+        margin: 0;
+    }
 
-    }
     .profile-text {
-        flex: 1.2;       
-        padding: 0 10px 0 0 ; 
-        text-align: left;
-        font-size: 21px;
-                
+        flex: 1.3;        
+        text-align:left;
+        font-size: 26px;                 
     }
+
+    #header{
+        padding-bottom: 60px;
+    }
+    
+    .flex-container >* {  
+           
+       display:flex ;        
+       flex-direction: column; 
+       flex-wrap:wrap ;                    
+    }
+
+    .flex-item {
+        width: 50%;
+                       
+    }
+
+    article.flex-item{
+        padding-bottom: 25px;
+    }
+    .portfolio-img{
+        margin: 5px;
+    } 
+
+    .h3class, p.portfolio-text,
+    .flex-item{
+        text-align: center;
+    } 
+    h3.h3class{
+        margin-bottom: 5px;
+    }
+
+    .portfolio-text{
+        align-items:flex-end;
+        margin-left: 0px; 
+    }
+
+    #portfolio {
+        padding-bottom: 0px;
+    }
+
+    section.contact-section{
+        margin-bottom: 30px;
+    }
+
+    p{
+        margin-bottom: 30px;
+        text-align:center;
+    } 
+    
+    ul.nav-list-footer{
+        display:flex;
+        flex-wrap: nowrap;
+    }
+    
+    .nav-item{
+        background: transparent;
+          
+    }   
         
     .back-to-top {
          display: none;
@@ -232,29 +284,66 @@ $phones: 480px = sm
     .nav-list-footer, .logo-footer{
         display: flex;
         flex-direction: row;
-        padding-bottom: 50px;
-
-    }
+        padding-bottom: 50px;    }
     
 }
-  
-  /*desktop*/
-@media (min-width: 1024px), (orientation :horizontal) {
-     /* From  1200px*/
+  /*##################################################################################*/
+  /*desktop From  768px*/
+
+@media (min-width: 1024px) {     
+     
     .container{
-      max-width: 1024px;
-    }
-  
-    .flex-item{
-      width: 33.33%;
-    }
+      max-width: 95%;
+    } 
 
     .nav-header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         padding: 15px 0;
+    }  
 
-  }  
+    .logo-header{
+        padding-left: 25px;
+    }
+    nav.nav-header{
+        padding-bottom:0;
+    }
+    
+    .profile-text {
+        flex: 1.5;        
+        text-align:left;
+        font-size: 26px;                 
+    }
+    
+    .flex-container{
+        display: flex;
+    }
+
+    .flex-item{
+        width: 33.33%;
+    }
+
+    .nav-footer{
+        display:flex;        
+        align-items:baseline;
+        padding: 5px 0;
+    }
+
+    .logo-footer {
+        text-transform: capitalize;
+        padding: 15px 0 10px 0 ;
+        text-align: center;
+        font-size: 1.7rem;
+        color: #4A4A4A;
+        font-family: 'Smooch Sans', sans-serif;
+        font-weight: 900;
+    }
+
+    p {
+        align-content: center;
+        align-items: center;
+    }
+    
   
 }
